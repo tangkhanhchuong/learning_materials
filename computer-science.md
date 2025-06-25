@@ -70,6 +70,10 @@
     - What is `memory layout`?
     - What is `memory hierarchy`?
     - What is `heap space` and `stack space`?
+    - What is `virtual memory`? Why do we need it? How does it work?
+       + How large `virtual memory` is?
+       + What is `paging`?
+       + Can 2 processes map to the same `physical address`? Where and in which case?
     - What will happen when we open an application?
     - What will happen when we call a function (with parameter) or return from function?
        + What will happen with `stack`? (Why don't we use `heap` here?)
