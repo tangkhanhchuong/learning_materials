@@ -1,0 +1,44 @@
+# Table of Contents
+
+- [DSA](#dsa)
+- [NETWORKING](#networking)
+- [OPERATING SYSTEM](#operating-system)
+- [DATABASE](#database)
+- [SECURITY](#security)
+
+## DSA
+    - Array
+        + How array is stored in mememory?
+        + What is the difference between Row-Major vs Column-Major Memory Access? Which is faster to access?
+    - Array List (vector in C++, list in Python, slice in Go...)
+        + How does it resize when running out of space memory?
+        + Why is the resizing array list ratio 2x? Why does it increase linearly or 3x?
+        + Is insert and random access operation always O(1)? -> random access: O(1), insert: artimored O(1) due to resizing when run out of capacity
+    - Linked List
+        + Compare Array List and Linked List. When to use each other? -> notice about memory layout
+    - String
+        + How to compare 2 strings efficiently?
+    - Stack and Queue
+        + How to implement Stack using Queue?
+        + How to implement Queue using Stack? 
+        -> Time and space complexity
+    - Hashmap
+        + Can we achieve the original value?
+        + What is hash collision?
+        + How to resize the hashmap when running out of capacity?
+        + Implement hashmap from sratch, with resizing mechanism
+    - Sorting
+        + Compare Quick sort and Merge sort? Time and space complexity
+        + Implement Quick sort and Merge sort
+        + Heapsort -> Implementation
+        + Which algorithm is used in Python, Go, NodeJS, Java?
+    - DFS and BFS
+        + Compare DFS and BFS
+        + Which is better and how to use them?
+    - Backtracking 
+    - Dynamic Programming
+    - Binary Search
+    - Heap
+    - Trie
+    
+```
