@@ -100,5 +100,46 @@
 4. System call
     - What is system call? How to do a `syscal`?
     - What happen with CPU when we do a `syscal`?
-    - What is the difference between `user space` and `kernel space`?     
+    - What is the difference between `user space` and `kernel space`?
+
+## NETWORKING
+
+## DATABASE
+1. Compare `SQL` and `NoSQL`?
+    - How do they scale up?
+    - How is transaction handled?
+    - What is `ACID`? Why `NoSQL` is `eventual consistency`?
+    - `CAP` Theorem
+2. What is `parameterized statement` / `prepared statement`? How does it work manually?
+    - What is `SQL injection`? how to avoid it?
+    - How many `requests` you have to send to Database in a single `prepared statement` query? // one for compile and one for execute
+    - Can you reuse the compiled query multiple times? (does it help to speed up your application?)
+3. How `indexing` works internally?
+    - Which algorithm and data structure does `index` use? Why?
+    - How does `composition index` work?
+    - How to know whether your query using `index` or not?
+    - How index work in this case: WHERE age = 5 and Where age > 5? The complexity to go to the next record?
+    - How `index` work with `char`?
+4. Complexity of SQL query? How to measure it?
+    - How SQL optimize a query?
+    - Complexity of this query `SELECT * FROM abc ORDER BY name LIMIT 10 OFFSET 1000000` // SELECT 10 record from offset 10^6 after sort by name (which is a char)? How to optimize it? 
+    - What is the complexity of `COUNT(*)` query?
+    - How to write query to avoid full scan table?
+    - Complexity of `JOIN`, `INNER JOIN` and `OUTER JOIN`
+5. What is `Database Replication`? When do we need it?
+    - What is `bin log`? How does `Master DB` sync with `Slave DB`?
+    - Can a `Slave DB` be a slave of another `Slave DB`? (in-directly, we do not need to sync  from `Master DB`)
+6. What is `Database Sharding`? When do we need it?
+    - Which rule do we can apply to `DB Sharding`?
+    - How to ensure `primary key` globally unique when sharding?
+    - How can we  shard a table to multiple tables (same server) and multiple DB (multiple servers)?
+    - How does SQL query work when we use sharding? For example, we query the data in different tables?
+7. What is database transaction?
+    - How do `rollback` work internally?
+    - What is `isolation level`? How many of them? `dirty read`, `unrepeatable read`, `phantom read`?
+    - How does transaction work when there are many concurrent requests?
+    - How to avoid `race condition` in DB? `read lock`, `write lock`?
+    - What is `distributed transaction`? How to make a transaction when a DB need to access multiple DB?
+
+## SECURITY
 ```
