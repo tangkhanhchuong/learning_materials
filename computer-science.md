@@ -121,6 +121,7 @@
     - How index work in this case: WHERE age = 5 and Where age > 5? The complexity to go to the next record?
     - How `index` work with `char`?
 4. Complexity of SQL query? How to measure it?
+    - What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE
     - How SQL optimize a query?
     - Complexity of this query `SELECT * FROM abc ORDER BY name LIMIT 10 OFFSET 1000000` // SELECT 10 record from offset 10^6 after sort by name (which is a char)? How to optimize it? 
     - What is the complexity of `COUNT(*)` query?
