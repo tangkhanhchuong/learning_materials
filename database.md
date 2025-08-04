@@ -1,3 +1,12 @@
+# Table of Contents
+
+- [A. TRANSACTIOn](#a-transaction)
+- [B. LOCKING](#b-locking)
+- [C. CONCURRENCY CONTROL](#c-concurrency-control)
+- [D. INDEXING](#d-indexing)
+- [E. POSTGRESQL SQL EXECUTION & OPTIMIZATION](#e-postgresql-sql-execution--optimization)
+- [F. REPLICATION & BACKUP](#f-replication--backup)
+
 # A. Transaction
 
 ## 1. SQL Isolation Levels
@@ -493,7 +502,7 @@ Check:
 
 Let me know if you'd like a diagram version or printable cheat sheet!
 
-# F. Replication + Backup
+# F. Replication & Backup
 ## 1. WAL
 - WAL is a durability mechanism used to ensure that changes to the database are not lost, even in the event of a crash.
 - "Write-ahead" means: log first, apply later.
